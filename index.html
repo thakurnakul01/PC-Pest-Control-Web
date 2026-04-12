@@ -1,263 +1,657 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PC Pest Control – Effective Pest Control Services</title>
-<meta name="description" content="PC Pest Control provides safe, fast, and effective termite, rodent, mosquito, and insect control services. Call now to book your service.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PC Pest Control – Effective Pest Control Services</title>
+    <meta
+      name="description"
+      content="PC Pest Control provides safe, fast, and effective termite, rodent, mosquito, and insect control services. Call now to book your service."
+    />
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
-<!-- Swiper CSS -->
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
-<style>
-/* General Styles */
-body { margin:0; font-family: 'Roboto', sans-serif; color:#333; line-height:1.6; scroll-behavior: smooth;}
-header { position: sticky; top:0; background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1); z-index:100; }
-nav { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; }
-nav a { text-decoration:none; color:#007bff; margin-left:20px; font-weight:bold; }
-nav a:hover { color:#ff6600; }
-.btn { padding:12px 25px; margin:5px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; font-size:1rem; transition: transform 0.3s; }
-.btn:hover { transform: scale(1.05); }
-.btn-orange { background:#ff6600; color:#fff; }
-.btn-blue { background:#007bff; color:#fff; }
+    <style>
+      /* General Styles */
+  * {
+      box-sizing: border-box;
+    }
 
-/* Hero */
-.hero { position:relative; height:90vh; display:flex; flex-direction:column; justify-content:center; align-items:center; color:#fff; text-align:center; overflow:hidden; background:#000; }
-.hero img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1; filter: brightness(0.4); }
-.hero h1 { font-family:'Montserrat', sans-serif; font-size:3rem; margin:0; }
-.hero p { font-size:1.3rem; margin:10px 0 20px; }
-
-/* Sections */
-section { padding:60px 20px; }
-.services { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
-.service-card { background:#f9f9f9; padding:20px; border-radius:10px; text-align:center; transition:transform 0.3s ease; }
-.service-card:hover { transform:translateY(-5px); box-shadow:0 5px 15px rgba(0,0,0,0.1); }
-.service-card img { width:80px; margin-bottom:15px; }
-
-/* Testimonials */
-.testimonial-card { background:#e6f2ff; padding:20px; border-radius:10px; text-align:center; }
-
-/* CTA */
-.cta-bar { background:#ff6600; color:#fff; text-align:center; padding:30px 20px; }
-
-/* Footer */
-footer { background:#333; color:#fff; padding:40px 20px; text-align:center; }
-footer a { color:#fff; margin:0 10px; text-decoration:none; }
-footer a:hover { color:#ff6600; }
-
-/* Swiper */
-.swiper-container { width:100%; padding:20px 0; }
-.swiper-slide img, .swiper-slide video { width:100%; border-radius:10px; }
-
-/* Sticky Call */
-.sticky-call { position:fixed; bottom:15px; right:15px; z-index:1000; }
-
-/* Location Section */
-#location { 
-  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
-  url('https://images.unsplash.com/photo-1591012911205-5d4f97e4747a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg') center/cover no-repeat; 
-  color:#fff; padding:60px 20px; text-align:center;
-}
-#location h2 { display:flex; justify-content:center; align-items:center; gap:10px; font-size:2rem; margin-bottom:30px; }
-@keyframes bounce { 0%,20%,50%,80%,100%{transform:translateY(0);} 40%{transform:translateY(-10px);} 60%{transform:translateY(-5px);} }
-
-/* Responsive */
-@media(max-width:768px){ .hero h1{ font-size:2rem; } .hero p{ font-size:1rem; } }
-</style>
-</head>
-<body>
-
-<!-- Header -->
-<header>
-<nav>
-  <div class="logo"><strong>PC Pest Control</strong></div>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#services">Services</a>
-    <a href="#location">Contact</a>
-    <a href="#booking" class="btn btn-orange">Book Now</a>
-  </div>
-</nav>
-</header>
-
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); z-index:1;"></div>
-  <img src="data:image/jpeg;base64,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" alt="Professional pest control technician providing service" 
-       style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:0;">
-  
-  <div style="position:relative; z-index:2; display:flex; flex-direction:column; justify-content:center; align-items:center; height:90vh; color:#fff; text-align:center; padding:0 20px;">
-    <h1 style="font-family:'Montserrat', sans-serif; font-size:3rem; margin:0; text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
-      Protect Your Home & Business from Pests!
-    </h1>
-    <p style="font-size:1.3rem; margin:10px 0 20px; text-shadow: 1px 1px 6px rgba(0,0,0,0.6);">
-      Safe, Fast, and Reliable Pest Control Services
-    </p>
-    <div style="display:flex; gap:15px; flex-wrap:wrap; justify-content:center;">
-      <button class="btn btn-orange" onclick="window.location.href='tel:+919557768550'">Call Now</button>
-      <button class="btn btn-blue" onclick="document.getElementById('booking').scrollIntoView();">Book Services</button>
-    </div>
-  </div>
-</section>
-
-<!-- Services Section -->
-<section id="services">
-<h2 style="text-align:center;">Our Services</h2>
-<div class="services">
-  <div class="service-card">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5_RYc1JTWXAfvXW5eVhpYLZSk7e76_y6snQ&s" alt="Termite Control">
-    <h3>Termite Control</h3>
-    <p>Professional termite treatment to protect your home.</p>
-  </div>
-  <div class="service-card">
-    <img src="data:image/jpeg;base64,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" alt="Rodent Control">
-    <h3>Rodent Control</h3>
-    <p>Keep your home or office rodent-free.</p>
-  </div>
-  <div class="service-card">
-    <img src="https://img.icons8.com/color/96/mosquito.png" alt="Mosquito & Insect Control">
-    <h3>Mosquito & Insect Control</h3>
-    <p>Protect your family from disease-carrying insects.</p>
-  </div>
-  <div class="service-card">
-    <img src="https://img.icons8.com/color/96/cockroach.png" alt="Cockroach & Ant Removal">
-    <h3>Cockroach & Ant Removal</h3>
-    <p>Fast removal of cockroaches and ants for a hygienic home.</p>
-  </div>
-</div>
-</section>
-
-<!-- Testimonials Section -->
-<section id="testimonials">
-<h2 style="text-align:center;">Customer Reviews</h2>
-<div class="swiper-container" id="testimonial-slider">
-  <div class="swiper-wrapper">
-    <div class="swiper-slide">
-      <div class="testimonial-card">
-        <p>“PC Pest Control saved our home from termites. Highly recommend!”</p>
-        <strong>- Ramesh S.</strong>
-      </div>
-    </div>
-    <div class="swiper-slide">
-      <div class="testimonial-card">
-        <p>“Fast and professional service. Our office is now rodent-free!”</p>
-        <strong>- Priya K.</strong>
-      </div>
-    </div>
-  </div>
-  <div class="swiper-pagination"></div>
-</div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-bar">
-<h2>Don’t Wait! Book Your PC Pest Control Service Today</h2>
-<button class="btn btn-orange" onclick="document.getElementById('booking').scrollIntoView();">Book Now</button>
-<button class="btn btn-blue" onclick="window.location.href='tel:+919557768550'">Call Now</button>
-</section>
-
-<!-- About Us Section -->
-<section id="about">
-<h2 style="text-align:center;">About PC Pest Control</h2>
-<p style="max-width:700px; margin:20px auto; text-align:center;">
-PC Pest Control is a trusted pest control company providing safe and effective services. Our mission is to protect your home and business from harmful pests.
-</p>
-</section>
-
-<!-- Booking Section -->
-<section id="booking">
-  <h2 style="text-align:center;">Book Your Service</h2>
-
-  <div style="max-width:500px; margin:0 auto; background:#f9f9f9; padding:30px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);">
-    
-    <form id="bookingForm" onsubmit="submitBookingForm(event)">
-      <input id="name" type="text" placeholder="Your Name" required 
-        style="width:100%; padding:12px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;">
-      <input id="phone" type="tel" placeholder="Phone Number" required 
-        style="width:100%; padding:12px; margin-bottom:10px; border-radius:5px; border:1px solid #ccc;">
-      <input id="service" type="text" placeholder="Service Required" required 
-        style="width:100%; padding:12px; margin-bottom:20px; border-radius:5px; border:1px solid #ccc;">
+        html, body 
+      {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
       
-      <button type="submit" class="btn btn-blue" style="width:100%;">Book Now</button>
-    </form>
+      body 
+      {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        color: #333;
+        line-height: 1.6;
+        scroll-behavior: smooth;
+      }
+      header {
+        position: sticky;
+        top: 0;
+        background: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 100;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #007bff;
+        margin-left: 20px;
+        font-weight: bold;
+      }
+      nav a:hover {
+        color: #ff6600;
+      }
+      .btn {
+        padding: 12px 25px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 1rem;
+        transition: transform 0.3s;
+      }
+      .btn:hover {
+        transform: scale(1.05);
+      }
+      .btn-orange {
+        background: #ff6600;
+        color: #fff;
+      }
+      .btn-blue {
+        background: #007bff;
+        color: #fff;
+      }
 
-  </div>
-</section>
+      /* Hero */
+      .hero {
+        position: relative;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        overflow: hidden;
+        background: #000;
+      }
+      .hero img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        filter: brightness(0.4);
+      }
+      .hero h1 {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3rem;
+        margin: 0;
+      }
+      .hero p {
+        font-size: 1.3rem;
+        margin: 10px 0 20px;
+      }
 
-<script>
-function submitBookingForm(event) {
-  event.preventDefault();
-  
-  // Get form values
-  const name = document.getElementById('name').value.trim();
-  const phone = document.getElementById('phone').value.trim();
-  const service = document.getElementById('service').value.trim();
-  const address = document.getElementById('address').value.trim();
+      /* Sections */
+      section {
+        padding: 60px 20px;
+      }
+      .services {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      .service-card {
+        background: #f9f9f9;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        transition: transform 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      }
+      .service-card img {
+        width: 80px;
+        margin-bottom: 15px;
+      }
 
-  // Professional WhatsApp message
-  const message = `Hello PC Pest Control Team,%0A%0AMy name is *${name}*.%0APhone: ${phone}%0AI would like to book your *${service}* service.%0APlease let me know the available schedule.%0AThank you!`;
+      /* Testimonials */
+      .testimonial-card {
+        background: #e6f2ff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+      }
 
-  // Open WhatsApp
-  window.open(`https://wa.me/919557768550?text=${message}`, '_blank');
+      /* CTA */
+      .cta-bar {
+        background: #ff6600;
+        color: #fff;
+        text-align: center;
+        padding: 30px 20px;
+      }
+
+      /* Footer */
+      footer {
+        background: #333;
+        color: #fff;
+        padding: 40px 20px;
+        text-align: center;
+      }
+      footer a {
+        color: #fff;
+        margin: 0 10px;
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: #ff6600;
+      }
+
+      /* Swiper */
+      .swiper-container {
+        width: 100%;
+        padding: 20px 0;
+      }
+      .swiper-slide img,
+      .swiper-slide video {
+        width: 100%;
+        border-radius: 10px;
+      }
+
+      /* Sticky Call */
+      .sticky-call {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        z-index: 1000;
+      }
+
+      /* Location Section */
+      #location {
+        background:
+          linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+          url("https://images.unsplash.com/photo-1591012911205-5d4f97e4747a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg")
+            center/cover no-repeat;
+        color: #fff;
+        padding: 60px 20px;
+        text-align: center;
+      }
+      #location h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+      @keyframes bounce {
+        0%,
+        20%,
+        50%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-10px);
+        }
+        60% {
+          transform: translateY(-5px);
+        }
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2rem;
+        }
+        .hero p {
+          font-size: 1rem;
+        }
+      }
+      .nav-links {
+  display: flex;
+  gap: 20px;
 }
-</script>
 
-<!-- Location Section -->
-<section id="location">
-<h2>
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#ff6600" viewBox="0 0 24 24" style="animation: bounce 1.5s infinite;">
-    <path d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.379 0-2.5-1.121-2.5-2.5S10.621 6.5 12 6.5s2.5 1.121 2.5 2.5S13.379 11.5 12 11.5z"/>
-  </svg>
-  Our Location
-</h2>
-<div style="max-width:900px; margin:0 auto; background:#111; border-radius:15px; overflow:hidden; box-shadow:0 10px 25px rgba(0,0,0,0.5);">
-  <iframe 
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.0415624232255!2d77.73867729999999!3d29.015759399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c658f8e7cece5%3A0x9216283c9155bc0e!2sPc%20pest%20control!5e0!3m2!1sen!2sin!4v1774946447693!5m2!1sen!2sin" 
-    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-</div>
-<p style="margin-top:20px; font-size:16px;">77, New Meenakshi Puram, Amhera Road, Meerut, Uttar Pradesh</p>
-<div style="margin-top:20px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+        /* Mobile */
+        @media (max-width: 768px) {
+          nav {
+            flex-direction: column;
+            align-items: flex-start;
+          }
 
+          .nav-links {
+            flex-direction: column;
+            width: 100%;
+          }
 
-  <a href="https://wa.me/919557768550" target="_blank" class="btn" style="background:#25D366; color:white;">💬 WhatsApp</a>
-  <a href="tel:+919557768550" class="btn btn-orange">📞 Call Now</a>
-  <a href="https://www.google.com/maps/dir/?api=1&destination=PC+Pest+Control+Meerut" target="_blank" class="btn btn-blue">🗺 Get Directions</a>
-</div>
-</section>
+          nav a {
+            margin: 10px 0;
+          }
+        }
 
-<!-- Footer -->
-<footer>
-<p>&copy; <script>document.write(new Date().getFullYear())</script> PC Pest Control. All Rights Reserved.</p>
-<p>
-<a href="#home">Home</a> | 
-<a href="#about">About Us</a> | 
-<a href="#services">Services</a> | 
-<a href="#location">Contact</a>
-</p>
-<p>
-Follow us:
-<a href="https://www.instagram.com/pcpestcontrol6" target="_blank">Instagram</a> |
-<a href="https://wa.me/919557768550" target="_blank">WhatsApp</a>
-</p>
-</footer>
+        img, iframe 
+          {
+           max-width: 100%;
+           height: auto;
+          }
+        @media (max-width: 500px) 
+          {
+            .btn {
+            width: 100%;
+                 }
+          }    
+          
+        body 
+          {
+           overflow-x: hidden;
+          }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <nav>
+        <nav>
+  <div class="logo"><strong>PC Pest Control</strong></div>
+  <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#location">Contact</a>
+          <a href="#booking" class="btn btn-orange">Book Now</a>
+        </div>
+      </nav>
+    </header>
 
-<!-- Sticky Call Button -->
-<a href="tel:+919557768550" class="btn btn-orange sticky-call">Call Now</a>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+          z-index: 1;
+        "
+      ></div>
+      <img
+        src="data:image/jpeg;base64,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"
+        alt="Professional pest control technician providing service"
+        style="
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 0;
+        "
+      />
 
-<!-- Swiper JS -->
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-document.addEventListener('DOMContentLoaded', function(){
-  var testimonialSwiper = new Swiper('#testimonial-slider', {
-    loop:true,
-    autoplay:{delay:5000},
-    pagination:{el:'.swiper-pagination', clickable:true}
-  });
-});
-</script>
-</body>
+      <div
+        style="
+          position: relative;
+          z-index: 2;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: #fff;
+          text-align: center;
+          padding: 0 20px;
+        "
+      >
+        <h1
+          style="
+            font-family: &quot;Montserrat&quot;, sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+          "
+        >
+          Protect Your Home & Business from Pests!
+        </h1>
+        <p
+          style="
+            font-size: 1.3rem;
+            margin: 10px 0 20px;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+          "
+        >
+          Safe, Fast, and Reliable Pest Control Services
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+          "
+        >
+          <button
+            class="btn btn-orange"
+            onclick="window.location.href = 'tel:+919557768550'"
+          >
+            Call Now
+          </button>
+          <button
+            class="btn btn-blue"
+            onclick="document.getElementById('booking').scrollIntoView()"
+          >
+            Book Services
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2 style="text-align: center">Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5_RYc1JTWXAfvXW5eVhpYLZSk7e76_y6snQ&s"
+            alt="Termite Control"
+          />
+          <h3>Termite Control</h3>
+          <p>Professional termite treatment to protect your home.</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Rodent Control"
+          />
+          <h3>Rodent Control</h3>
+          <p>Keep your home or office rodent-free.</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="https://img.icons8.com/color/96/mosquito.png"
+            alt="Mosquito & Insect Control"
+          />
+          <h3>Mosquito & Insect Control</h3>
+          <p>Protect your family from disease-carrying insects.</p>
+        </div>
+        <div class="service-card">
+          <img
+            src="https://img.icons8.com/color/96/cockroach.png"
+            alt="Cockroach & Ant Removal"
+          />
+          <h3>Cockroach & Ant Removal</h3>
+          <p>Fast removal of cockroaches and ants for a hygienic home.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <h2 style="text-align: center">Customer Reviews</h2>
+      <div class="swiper-container" id="testimonial-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <p>
+                “PC Pest Control saved our home from termites. Highly
+                recommend!”
+              </p>
+              <strong>- Ramesh S.</strong>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card">
+              <p>
+                “Fast and professional service. Our office is now rodent-free!”
+              </p>
+              <strong>- Priya K.</strong>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-bar">
+      <h2>Don’t Wait! Book Your PC Pest Control Service Today</h2>
+      <button
+        class="btn btn-orange"
+        onclick="document.getElementById('booking').scrollIntoView()"
+      >
+        Book Now
+      </button>
+      <button
+        class="btn btn-blue"
+        onclick="window.location.href = 'tel:+919557768550'"
+      >
+        Call Now
+      </button>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+      <h2 style="text-align: center">About PC Pest Control</h2>
+      <p style="max-width: 700px; margin: 20px auto; text-align: center">
+        PC Pest Control is a trusted pest control company providing safe and
+        effective services. Our mission is to protect your home and business
+        from harmful pests.
+      </p>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+      <h2 style="text-align: center">Book Your Service</h2>
+
+      <div
+        style="
+          max-width: 500px;
+          margin: 0 auto;
+          background: #f9f9f9;
+          padding: 30px;
+          border-radius: 15px;
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        "
+      >
+        <form id="bookingForm" onsubmit="submitBookingForm(event)">
+          <input
+            id="name"
+            type="text"
+            placeholder="Your Name"
+            required
+            style="
+              width: 100%;
+              padding: 12px;
+              margin-bottom: 10px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          />
+          <input
+            id="phone"
+            type="tel"
+            placeholder="Phone Number"
+            required
+            style="
+              width: 100%;
+              padding: 12px;
+              margin-bottom: 10px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          />
+          <input
+            id="service"
+            type="text"
+            placeholder="Service Required"
+            required
+            style="
+              width: 100%;
+              padding: 12px;
+              margin-bottom: 20px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+            "
+          />
+
+          <button type="submit" class="btn btn-blue" style="width: 100%">
+            Book Now
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <script>
+      function submitBookingForm(event) {
+        event.preventDefault();
+
+        // Get form values
+        const name = document.getElementById("name").value.trim();
+        const phone = document.getElementById("phone").value.trim();
+        const service = document.getElementById("service").value.trim();
+        const address = document.getElementById("address").value.trim();
+
+        // Professional WhatsApp message
+        const message = `Hello PC Pest Control Team,%0A%0AMy name is *${name}*.%0APhone: ${phone}%0AI would like to book your *${service}* service.%0APlease let me know the available schedule.%0AThank you!`;
+
+        // Open WhatsApp
+        window.open(`https://wa.me/919557768550?text=${message}`, "_blank");
+      }
+    </script>
+
+    <!-- Location Section -->
+    <section id="location">
+      <h2>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          fill="#ff6600"
+          viewBox="0 0 24 24"
+          style="animation: bounce 1.5s infinite"
+        >
+          <path
+            d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7zm0 9.5c-1.379 0-2.5-1.121-2.5-2.5S10.621 6.5 12 6.5s2.5 1.121 2.5 2.5S13.379 11.5 12 11.5z"
+          />
+        </svg>
+        Our Location
+      </h2>
+      <div
+        style="
+          max-width: 900px;
+          margin: 0 auto;
+          background: #111;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        "
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.0415624232255!2d77.73867729999999!3d29.015759399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c658f8e7cece5%3A0x9216283c9155bc0e!2sPc%20pest%20control!5e0!3m2!1sen!2sin!4v1774946447693!5m2!1sen!2sin"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p style="margin-top: 20px; font-size: 16px">
+        77, New Meenakshi Puram, Amhera Road, Meerut, Uttar Pradesh
+      </p>
+      <div
+        style="
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          flex-wrap: wrap;
+        "
+      >
+        <a
+          href="https://wa.me/919557768550"
+          target="_blank"
+          class="btn"
+          style="background: #25d366; color: white"
+          >💬 WhatsApp</a
+        >
+        <a href="tel:+919557768550" class="btn btn-orange">📞 Call Now</a>
+        <a
+          href="https://www.google.com/maps/dir/?api=1&destination=PC+Pest+Control+Meerut"
+          target="_blank"
+          class="btn btn-blue"
+          >🗺 Get Directions</a
+        >
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        PC Pest Control. All Rights Reserved.
+      </p>
+      <p>
+        <a href="#home">Home</a> | <a href="#about">About Us</a> |
+        <a href="#services">Services</a> |
+        <a href="#location">Contact</a>
+      </p>
+      <p>
+        Follow us:
+        <a href="https://www.instagram.com/pcpestcontrol6" target="_blank"
+          >Instagram</a
+        >
+        |
+        <a href="https://wa.me/919557768550" target="_blank">WhatsApp</a>
+      </p>
+    </footer>
+
+    <!-- Sticky Call Button -->
+    <a href="tel:+919557768550" class="btn btn-orange sticky-call">Call Now</a>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var testimonialSwiper = new Swiper("#testimonial-slider", {
+          loop: true,
+          autoplay: { delay: 5000 },
+          pagination: { el: ".swiper-pagination", clickable: true },
+        });
+      });
+    </script>
+  </body>
 </html>
