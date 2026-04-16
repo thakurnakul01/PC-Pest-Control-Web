@@ -276,22 +276,64 @@
           {
            overflow-x: hidden;
           }
+	.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+
+  .nav-links a {
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
     </style>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav>
-        <nav>
-  <div class="logo"><strong>PC Pest Control</strong></div>
-  <div class="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About Us</a>
-          <a href="#services">Services</a>
-          <a href="#location">Contact</a>
-          <a href="#booking" class="btn btn-orange">Book Now</a>
-        </div>
-      </nav>
+     <nav class="navbar">
+  <div class="logo"><strong><big>PC Pest Control</big></strong></div>
+
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <div class="nav-links" id="navLinks">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#location">Contact</a>
+    <a href="#booking" class="btn btn-orange">Book Now</a>
+  </div>
+</nav>
     </header>
 
     <!-- Hero Section -->
@@ -653,5 +695,20 @@
         });
       });
     </script>
+	
+	<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+<script>
+  const links = document.querySelectorAll(".nav-links a");
+
+  links.forEach(link => {
+    link.addEventListener("click", () => {
+      document.getElementById("navLinks").classList.remove("active");
+    });
+  });
+</script>
   </body>
 </html>
