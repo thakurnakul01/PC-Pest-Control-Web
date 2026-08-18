@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PC Pest Control | Professional Pest Control Services in Meerut</title>
+  <meta name="description" content="PC Pest Control provides safe, fast and effective termite, rodent, mosquito, cockroach and insect control services in Meerut.">
+  <meta name="theme-color" content="#f97316">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --orange:#f97316;
+      --orange-dark:#ea580c;
+      --ink:#111827;
+      --muted:#667085;
+      --bg:#f7f8fa;
+      --white:#fff;
+      --line:#e7e9ee;
+      --green:#25d366;
+      --shadow:0 20px 60px rgba(15,23,42,.10);
+      --radius:24px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    button,input,textarea,select{font:inherit}
+    .container{width:min(1160px,calc(100% - 40px));margin:auto}
+    .section{padding:96px 0}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--orange-dark);font-size:.82rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;margin-bottom:14px}
+    .eyebrow:before{content:"";width:26px;height:3px;background:var(--orange);border-radius:99px}
+    h1,h2,h3{font-family:"Manrope",sans-serif;line-height:1.08}
+    h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-.04em}
+    .section-head{max-width:720px;margin-bottom:44px}
+    .section-head p{color:var(--muted);margin-top:16px;font-size:1.05rem}
+
+    /* NAV */
+    header{position:fixed;top:0;left:0;right:0;z-index:1000;padding:14px 0;transition:.25s}
+    header.scrolled{background:rgba(255,255,255,.88);backdrop-filter:blur(18px);box-shadow:0 8px 30px rgba(15,23,42,.08)}
+    .nav{height:64px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:11px;font-family:"Manrope";font-weight:800;color:#fff}
+    .brand-mark{width:42px;height:42px;border-radius:13px;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:17px;box-shadow:0 8px 20px rgba(17,24,39,.2)}
+    .brand span:last-child{font-size:1.05rem;color:#fff}
+    header.scrolled .brand,
+    header.scrolled .brand span:last-child{color:var(--ink)}
+    .nav-links{display:flex;align-items:center;gap:28px;font-size:.92rem;font-weight:700}
+    .nav-links a{color:#fff;opacity:.95;transition:.2s}
+    .nav-links a:hover{color:#fff;opacity:1}
+    header.scrolled .nav-links a{color:var(--ink)}
+    header.scrolled .nav-links a:hover{color:var(--orange);opacity:1}
+    .nav-cta{padding:12px 18px;border-radius:12px!important;background:var(--orange);color:#fff!important;opacity:1!important;box-shadow:0 8px 20px rgba(249,115,22,.25)}
+    .menu{display:none;border:0;background:none;font-size:28px;cursor:pointer}
+
+    /* HERO */
+    .hero{min-height:780px;padding:150px 0 90px;display:flex;align-items:center;position:relative;color:#fff;overflow:hidden;background:#101827}
+    .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,10,20,.93) 0%,rgba(5,10,20,.73) 46%,rgba(5,10,20,.35) 100%),url("data:image/jpeg;base64,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");
+    background-position:center;background-size:cover;z-index:0}
+    .hero-content{position:relative;z-index:2;max-width:730px}
+    .hero-badge{display:inline-flex;gap:8px;align-items:center;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.18);padding:8px 13px;border-radius:999px;font-size:.82rem;font-weight:700;backdrop-filter:blur(10px);margin-bottom:22px}
+    .dot{width:8px;height:8px;border-radius:50%;background:#4ade80;box-shadow:0 0 0 5px rgba(74,222,128,.12)}
+    .hero h1{font-size:clamp(3rem,7vw,5.8rem);letter-spacing:-.065em}
+    .hero h1 span{color:#fb923c}
+    .hero p{font-size:1.15rem;color:#dbe2ea;max-width:620px;margin:22px 0 30px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:0;cursor:pointer;border-radius:13px;padding:14px 20px;font-weight:800;transition:.2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--orange);color:#fff;box-shadow:0 12px 28px rgba(249,115,22,.28)}
+    .btn-light{background:#fff;color:var(--ink)}
+    .btn-outline{border:1px solid rgba(255,255,255,.25);color:#fff;background:rgba(255,255,255,.08)}
+    .hero-trust{display:flex;gap:24px;flex-wrap:wrap;margin-top:38px;color:#d8dee7;font-size:.9rem}
+    .hero-trust span{display:flex;gap:7px;align-items:center}
+    .hero-trust b{color:#fff}
+
+    /* TRUST */
+    .trust{background:#fff;border-bottom:1px solid var(--line)}
+    .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:25px 0}
+    .trust-item{display:flex;align-items:center;justify-content:center;gap:11px;border-right:1px solid var(--line);font-weight:700;font-size:.92rem}
+    .trust-item:last-child{border:0}
+    .trust-icon{width:38px;height:38px;border-radius:12px;background:#fff3e8;color:var(--orange-dark);display:grid;place-items:center}
+
+    /* SERVICES */
+    .services{background:#fff}
+    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.25s;box-shadow:0 5px 20px rgba(15,23,42,.03)}
+    .card:hover{transform:translateY(-7px);box-shadow:var(--shadow);border-color:#ffd9bf}
+    .service-icon{width:58px;height:58px;border-radius:17px;background:#fff3e8;display:grid;place-items:center;font-size:28px;margin-bottom:22px}
+    .card h3{font-size:1.25rem}
+    .card p{color:var(--muted);font-size:.94rem;margin-top:10px}
+
+    /* WHY */
+    .why{background:var(--bg)}
+    .why-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+    .why-visual{min-height:490px;border-radius:32px;background:linear-gradient(145deg,#111827,#263244);position:relative;overflow:hidden;padding:32px;display:flex;align-items:flex-end}
+    .why-visual:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(249,115,22,.25);filter:blur(30px);right:-80px;top:-70px}
+    .shield{position:relative;z-index:2;width:100%;padding:25px;border:1px solid rgba(255,255,255,.13);background:rgba(255,255,255,.08);backdrop-filter:blur(12px);border-radius:22px;color:#fff}
+    .shield strong{font-size:1.3rem}
+    .shield p{color:#cbd5e1;margin-top:7px}
+    .checks{display:grid;gap:18px;margin-top:30px}
+    .check{display:flex;gap:14px}
+    .check-mark{flex:0 0 34px;height:34px;border-radius:10px;background:#fff3e8;color:var(--orange-dark);display:grid;place-items:center;font-weight:900}
+    .check p{color:var(--muted);font-size:.92rem;margin-top:3px}
+
+    /* PROCESS */
+    .process{background:#fff}
+    .process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .step{position:relative;padding:30px;border:1px solid var(--line);border-radius:22px}
+    .number{font-family:"Manrope";font-size:3.2rem;color:#ffe2cd;line-height:1;margin-bottom:18px}
+    .step h3{font-size:1.3rem}
+    .step p{color:var(--muted);margin-top:9px}
+
+    /* REVIEWS */
+    .reviews{background:#111827;color:#fff}
+    .reviews .section-head p{color:#aeb8c7}
+    .review-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .review{background:#1b2535;border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:28px}
+    .stars{color:#fb923c;letter-spacing:2px}
+    .review p{color:#d6dce5;margin:17px 0}
+    .review-user{display:flex;align-items:center;gap:12px}
+    .avatar{width:42px;height:42px;border-radius:50%;background:#fff3e8;color:var(--orange-dark);display:grid;place-items:center;font-weight:900}
+
+    /* BOOKING */
+    .booking{background:#fff}
+    .booking-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:45px;align-items:start}
+    .contact-panel{background:#111827;color:#fff;border-radius:28px;padding:34px;position:sticky;top:100px}
+    .contact-panel p{color:#c8d0dc;margin:12px 0 25px}
+    .contact-line{display:flex;gap:13px;align-items:center;padding:14px 0;border-top:1px solid rgba(255,255,255,.1)}
+    .contact-line span:first-child{font-size:20px}
+    .form-box{padding:34px;border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow)}
+    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}
+    .field{display:flex;flex-direction:column;gap:7px;margin-bottom:15px}
+    .field.full{grid-column:1/-1}
+    label{font-weight:700;font-size:.86rem}
+    input,select,textarea{width:100%;padding:14px 15px;border:1px solid #dfe3e8;border-radius:13px;outline:none;background:#fff;transition:.2s}
+    input:focus,select:focus,textarea:focus{border-color:var(--orange);box-shadow:0 0 0 4px rgba(249,115,22,.1)}
+    textarea{min-height:110px;resize:vertical}
+
+    /* LOCATION */
+    .location{background:var(--bg)}
+    .map-wrap{border-radius:28px;overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow)}
+    .map-wrap iframe{display:block;width:100%;height:430px;border:0}
+    .location-info{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-top:18px;flex-wrap:wrap}
+    .location-info p{color:var(--muted)}
+
+    /* CTA */
+    .cta{padding:30px 0}
+    .cta-box{background:linear-gradient(110deg,#f97316,#ea580c);color:#fff;border-radius:28px;padding:44px;display:flex;justify-content:space-between;align-items:center;gap:25px}
+    .cta-box h2{font-size:clamp(1.8rem,4vw,2.7rem)}
+    .cta-box p{margin-top:8px;color:#ffeadc}
+
+    /* FOOTER */
+    footer{background:#0b1120;color:#aeb8c7;padding:55px 0 85px}
+    .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+    footer h3{color:#fff;font-size:1.1rem;margin-bottom:15px}
+    footer p{font-size:.92rem}
+    footer a:hover{color:#fff}
+    .footer-links{display:grid;gap:8px}
+    .copyright{border-top:1px solid rgba(255,255,255,.08);margin-top:40px;padding-top:22px;font-size:.82rem}
+
+    /* FLOATING */
+    .floating{position:fixed;right:18px;bottom:18px;z-index:999;display:flex;flex-direction:column;gap:9px}
+    .float-btn{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;color:#fff;box-shadow:0 12px 30px rgba(0,0,0,.18);font-size:20px}
+    .float-wa{background:var(--green)}
+    .float-call{background:var(--orange)}
+
+    @media(max-width:900px){
+      .nav-links{gap:17px}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .trust-grid{grid-template-columns:repeat(2,1fr)}
+      .trust-item:nth-child(2){border-right:0}
+      .trust-item{padding:10px}
+      .why-grid,.booking-grid{grid-template-columns:1fr}
+      .contact-panel{position:static}
+    }
+    @media(max-width:700px){
+      .container{width:min(100% - 28px,1160px)}
+      .section{padding:70px 0}
+      header{padding:8px 0}
+      .nav{height:58px}
+      .menu{display:block}
+      .nav-links{display:none;position:absolute;top:68px;left:14px;right:14px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);flex-direction:column;align-items:stretch}
+      .nav-links.open{display:flex}
+      .nav-links a{padding:11px 12px}
+      .nav-cta{text-align:center}
+      .hero{min-height:720px;padding-top:125px}
+      .hero h1{font-size:3rem}
+      .hero p{font-size:1rem}
+      .hero-trust{gap:12px;display:grid}
+      .trust-grid,.service-grid,.process-grid,.review-grid,.footer-grid{grid-template-columns:1fr}
+      .trust-item{border-right:0;border-bottom:1px solid var(--line);justify-content:flex-start;padding:14px 0}
+      .trust-item:last-child{border-bottom:0}
+      .why-visual{min-height:360px}
+      .form-grid{grid-template-columns:1fr}
+      .field.full{grid-column:auto}
+      .cta-box{padding:30px;display:block}
+      .cta-box .btn{margin-top:20px}
+      .map-wrap iframe{height:330px}
+      .floating{right:12px;bottom:12px}
+    }
+  </style>
+</head>
+
+<body>
+<header id="header">
+  <div class="container nav">
+    <a class="brand" href="#home" aria-label="PC Pest Control home">
+      <span class="brand-mark">PC</span>
+      <span>PC Pest Control</span>
+    </a>
+    <button class="menu" id="menuBtn" aria-label="Open menu">☰</button>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#why">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#location">Contact</a>
+      <a href="#booking" class="nav-cta">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-content">
+    <div class="hero-badge"><span class="dot"></span> Professional Pest Control Services</div>
+    <h1>Take Back Your <span>Home.</span><br>Keep Pests Out.</h1>
+    <p>Safe, fast and reliable pest control for homes and businesses. Get professional help for termites, rodents, mosquitoes, cockroaches and insects.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="tel:+919557768550">📞 Call Now</a>
+      <a class="btn btn-light" href="#booking">Get a Free Booking</a>
+      <a class="btn btn-outline" href="https://wa.me/919557768550" target="_blank" rel="noopener">💬 WhatsApp</a>
+    </div>
+    <div class="hero-trust">
+      <span>✓ <b>Fast Response</b></span>
+      <span>✓ <b>Professional Service</b></span>
+      <span>✓ <b>Home & Business</b></span>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="container trust-grid">
+    <div class="trust-item"><span class="trust-icon">🛡️</span> Safe & Effective</div>
+    <div class="trust-item"><span class="trust-icon">⚡</span> Quick Response</div>
+    <div class="trust-item"><span class="trust-icon">🏠</span> Residential & Commercial</div>
+    <div class="trust-item"><span class="trust-icon">📍</span> Serving Meerut</div>
+  </div>
+</section>
+
+<section class="section services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Our Services</div>
+      <h2>One team for your pest problems.</h2>
+      <p>Professional treatments designed to help keep your home, office and surroundings pest-free.</p>
+    </div>
+    <div class="service-grid">
+      <article class="card">
+        <div class="service-icon">🐜</div>
+        <h3>Termite Control</h3>
+        <p>Professional termite treatment to protect your home from damaging infestations.</p>
+      </article>
+      <article class="card">
+        <div class="service-icon">🐀</div>
+        <h3>Rodent Control</h3>
+        <p>Effective solutions to help keep homes and offices rodent-free.</p>
+      </article>
+      <article class="card">
+        <div class="service-icon">🦟</div>
+        <h3>Mosquito & Insect</h3>
+        <p>Protection from mosquitoes and other disease-carrying insects.</p>
+      </article>
+      <article class="card">
+        <div class="service-icon">🪳</div>
+        <h3>Cockroach & Ant</h3>
+        <p>Fast removal solutions for cockroaches and ants for a cleaner environment.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section why" id="why">
+  <div class="container why-grid">
+    <div class="why-visual">
+      <div class="shield">
+        <strong>Protection that starts with the right treatment.</strong>
+        <p>PC Pest Control focuses on fast response and professional service for homes and businesses.</p>
+      </div>
+    </div>
+    <div>
+      <div class="eyebrow">Why Choose Us</div>
+      <h2>Professional help when pests become a problem.</h2>
+      <div class="checks">
+        <div class="check"><span class="check-mark">✓</span><div><strong>Safe, professional approach</strong><p>Service designed around effective pest control and a cleaner environment.</p></div></div>
+        <div class="check"><span class="check-mark">✓</span><div><strong>Fast response</strong><p>Reach the team directly by phone or WhatsApp to discuss your requirement.</p></div></div>
+        <div class="check"><span class="check-mark">✓</span><div><strong>Multiple pest solutions</strong><p>Termites, rodents, mosquitoes, cockroaches, ants and insects covered.</p></div></div>
+        <div class="check"><span class="check-mark">✓</span><div><strong>Home & business service</strong><p>Suitable for residential and commercial pest-control requirements.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section process">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">How It Works</div>
+      <h2>Simple booking. Professional service.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="step"><div class="number">01</div><h3>Tell us the problem</h3><p>Call or send a WhatsApp message with the pest issue and your requirement.</p></div>
+      <div class="step"><div class="number">02</div><h3>Choose your service</h3><p>Share the required service and discuss a suitable schedule with the team.</p></div>
+      <div class="step"><div class="number">03</div><h3>Get it treated</h3><p>Book your service and get professional pest-control assistance.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Customer Reviews</div>
+      <h2>What customers say.</h2>
+      <p>Real feedback already included in your original website, now presented in a cleaner UI.</p>
+    </div>
+    <div class="review-grid">
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>“PC Pest Control saved our home from termites. Highly recommend!”</p>
+        <div class="review-user"><span class="avatar">RS</span><strong>Ramesh S.</strong></div>
+      </article>
+      <article class="review">
+        <div class="stars">★★★★★</div>
+        <p>“Fast and professional service. Our office is now rodent-free!”</p>
+        <div class="review-user"><span class="avatar">PK</span><strong>Priya K.</strong></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section booking" id="booking">
+  <div class="container booking-grid">
+    <div class="contact-panel">
+      <div class="eyebrow">Book Service</div>
+      <h2>Let's solve your pest problem.</h2>
+      <p>Fill in the form and we'll open WhatsApp with your booking details ready to send.</p>
+      <div class="contact-line"><span>📞</span><a href="tel:+919557768550">+91 95577 68550</a></div>
+      <div class="contact-line"><span>💬</span><a href="https://wa.me/919557768550" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <div class="contact-line"><span>📍</span><span>Meerut, Uttar Pradesh</span></div>
+    </div>
+
+    <div class="form-box">
+      <div class="section-head" style="margin-bottom:25px">
+        <div class="eyebrow">Quick Booking</div>
+        <h2 style="font-size:2rem">Request a service</h2>
+      </div>
+      <form id="bookingForm">
+        <div class="form-grid">
+          <div class="field"><label for="name">Your Name</label><input id="name" required placeholder="Enter your name"></div>
+          <div class="field"><label for="phone">Phone Number</label><input id="phone" type="tel" required placeholder="Enter phone number"></div>
+          <div class="field full"><label for="service">Service Required</label>
+            <select id="service" required>
+              <option value="">Select a service</option>
+              <option>Termite Control</option>
+              <option>Rodent Control</option>
+              <option>Mosquito & Insect Control</option>
+              <option>Cockroach & Ant Removal</option>
+              <option>Other Pest Control Service</option>
+            </select>
+          </div>
+          <div class="field full"><label for="message">Additional Details</label><textarea id="message" placeholder="Tell us briefly about the pest problem..."></textarea></div>
+          <div class="field full"><button class="btn btn-primary" type="submit">💬 Send Booking on WhatsApp</button></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div><h2>Don’t wait for the problem to grow.</h2><p>Book your PC Pest Control service today.</p></div>
+      <div class="actions"><a class="btn btn-light" href="#booking">Book Now</a><a class="btn btn-outline" href="tel:+919557768550">📞 Call Now</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="section location" id="location">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Find Us</div>
+      <h2>PC Pest Control in Meerut.</h2>
+      <p>77, New Meenakshi Puram, Amhera Road, Meerut, Uttar Pradesh</p>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3489.0415624232255!2d77.73867729999999!3d29.015759399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c658f8e7cece5%3A0x9216283c9155bc0e!2sPc%20pest%20control!5e0!3m2!1sen!2sin!4v1774946447693!5m2!1sen!2sin" loading="lazy" allowfullscreen></iframe>
+    </div>
+    <div class="location-info">
+      <p>📍 77, New Meenakshi Puram, Amhera Road, Meerut, Uttar Pradesh</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=PC+Pest+Control+Meerut" target="_blank" rel="noopener">🗺 Get Directions</a>
+        <a class="btn" style="background:#25d366;color:#fff" href="https://wa.me/919557768550" target="_blank" rel="noopener">💬 WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="#home"><span class="brand-mark">PC</span><span style="color:#fff">PC Pest Control</span></a>
+        <p style="margin-top:16px;max-width:350px">Safe, fast and reliable pest control services for homes and businesses.</p>
+      </div>
+      <div><h3>Quick Links</h3><div class="footer-links"><a href="#home">Home</a><a href="#services">Services</a><a href="#why">Why Us</a><a href="#booking">Book Service</a></div></div>
+      <div><h3>Contact</h3><div class="footer-links"><a href="tel:+919557768550">📞 +91 95577 68550</a><a href="https://wa.me/919557768550" target="_blank">💬 WhatsApp</a><a href="https://www.instagram.com/pcpestcontrol6" target="_blank">📸 Instagram</a></div></div>
+    </div>
+    <div class="copyright">© <span id="year"></span> PC Pest Control. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="floating">
+  <a class="float-btn float-wa" href="https://wa.me/919557768550" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+  <a class="float-btn float-call" href="tel:+919557768550" aria-label="Call">☎</a>
+</div>
+
+<script>
+  const header = document.getElementById("header");
+  const menuBtn = document.getElementById("menuBtn");
+  const navLinks = document.getElementById("navLinks");
+
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("scrolled", window.scrollY > 20);
+  });
+
+  menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+    menuBtn.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+  });
+
+  document.querySelectorAll(".nav-links a").forEach(a => {
+    a.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuBtn.textContent = "☰";
+    });
+  });
+
+  document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const service = document.getElementById("service").value;
+    const details = document.getElementById("message").value.trim();
+    const text =
+      `Hello PC Pest Control Team,%0A%0A` +
+      `My name is *${encodeURIComponent(name)}*.%0A` +
+      `Phone: ${encodeURIComponent(phone)}%0A` +
+      `Service: *${encodeURIComponent(service)}*%0A` +
+      `Details: ${encodeURIComponent(details || "Not provided")}%0A%0A` +
+      `Please let me know the available schedule. Thank you!`;
+    window.location.href = `https://wa.me/919557768550?text=${text}`;
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
